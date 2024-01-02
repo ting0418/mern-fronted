@@ -1,0 +1,32 @@
+{
+  "name": "client2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "axios": "^1.6.2",
+    "bootstrap": "^5.3.2",
+    "js-cookie": "^3.0.5",
+    "next": "^13.4.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18",
+    "react-redux": "^9.0.4",
+    "react-router-dom": "^6.20.0",
+    "redux": "^5.0.0",
+    "redux-persist": "^6.0.0",
+    "router-dom": "^2.2.11",
+    "sass": "^1.69.5",
+    "sweetalert2": "^11.10.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3"
+  }
+}
