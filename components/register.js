@@ -30,7 +30,7 @@ const Register = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:3005/api/user/register",
+        "https://mern-api-fzml.onrender.com/api/user/register",
         formData,
         {
           withCredentials: true,

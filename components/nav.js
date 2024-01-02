@@ -13,13 +13,12 @@ const Nav = () => {
     isLoggedIn: state.user.isLoggedIn,
     username: state.user.user?.user?.username,
   }));
-  
 
   console.log(username);
   const handleLogout = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3005/api/user/logout",
+        "https://mern-api-fzml.onrender.com/api/user/logout",
         {},
         {
           withCredentials: true,

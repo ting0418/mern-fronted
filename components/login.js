@@ -15,7 +15,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3005/api/user/login",
+        "https://mern-api-fzml.onrender.com/api/user/login",
         {
           email,
           password,
@@ -49,7 +49,7 @@ const Login = () => {
   const googleLogin = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3005/api/user/google",
+        "https://mern-api-fzml.onrender.com/api/user/google",
         {
           withCredentials: true,
           headers: {
