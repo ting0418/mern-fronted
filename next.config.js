@@ -13,7 +13,7 @@ const nextConfig = {
     return [
       {
         source: "/api/:path",
-        destination: "http://localhost:3005/:path*", // Proxy to Backend
+        destination: "https://mern-api-fzml.onrender.com/:path*", // Proxy to Backend
       },
     ];
   },
