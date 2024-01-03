@@ -3,9 +3,9 @@ import { useSelector } from "react-redux";
 
 const Profile = () => {
   const { isLoggedIn, user, errorMessage } = useSelector((state) => state.user);
-
+  const date = userDate.toISOString().split("T")[0];
+  console.log(date);
   if (isLoggedIn) {
-    const date = user.user.date.toISOString().split("T")[0];
     return (
       <>
         <h1 className="text-center">這是你的個人檔案頁面</h1>
