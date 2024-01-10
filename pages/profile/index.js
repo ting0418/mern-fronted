@@ -1,6 +1,7 @@
 // Profile.js
 import { useSelector } from "react-redux";
-
+import Swal from "sweetalert2";
+import Router from "next/router";
 const Profile = () => {
   const { isLoggedIn, user, errorMessage } = useSelector((state) => state.user);
 
@@ -17,14 +18,13 @@ const Profile = () => {
       </>
     );
   } else {
-    return (
-      <>
-        <h1 className="text-center">請先登入</h1>
-        <div>
-          <p>{errorMessage}</p>
-        </div>
-      </>
-    );
+    Swal.fire({
+      title: "請先登入",
+      text: "即將導往登入頁面",
+      icon: "success",
+    }).then(() => {
+      Router.push("/login");
+    });
   }
 };
 

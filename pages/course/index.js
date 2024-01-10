@@ -1,8 +1,10 @@
 import React from "react";
-import { FetchUserData } from "../../components/checkLogin";
+import Index from "../../components/course-component";
 
 export default function index() {
-  // FetchUserData();
-
-  return <div>123456</div>;
+  return (
+    <div>
+      <Index />
+    </div>
+  );
 }
