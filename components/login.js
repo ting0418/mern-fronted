@@ -105,14 +105,14 @@ const Login = () => {
         </div>
         <div>
           <hr />
-          <button
+          {/* <button
             onClick={() => {
               googleLogin();
             }}
             className="btn btn-dark text-white mt-3"
           >
             透過google登入
-          </button>
+          </button> */}
         </div>
       </div>
     </>

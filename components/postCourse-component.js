@@ -4,14 +4,14 @@ import { useSelector } from "react-redux";
 import { Link } from "next/link";
 function PostCourse() {
   const { isLoggedIn, user } = useSelector((state) => state.user);
-  console.log(username);
+
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState(null);
   const postCourse = async () => {
     try {
       const response = await axios.post(
-        "https://mern-api-fzml.onrender.com/api/courses /",
+        "https://mern-api-fzml.onrender.com/api/courses/",
         { title, description, price },
         {
           withCredentials: true,
