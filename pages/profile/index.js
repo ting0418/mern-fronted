@@ -12,7 +12,7 @@ const Profile = () => {
         <div>
           <p>你的用戶名稱為: {user.user.username}</p>{" "}
           <p>你的身分為: {user.user.role}</p>
-          <p>註冊日期為: {user.user.date}</p>
+          <p>註冊日期為: {user.user.date.split("T")[0]}</p>
           {/* 其他用戶相關信息 */}
         </div>
       </>
